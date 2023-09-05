@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
 	int mes;
 	
 	scanf("%d",&mes);
@@ -31,4 +30,6 @@ int main()
 	}else if(mes==12){
 		printf("December\n");
 	}
+
+	return 0
 }
