@@ -1,8 +1,8 @@
     #include <stdio.h>
 
     int main(){
-        double a, b;
-        scanf("%lf %lf", &a, &b);
-        printf("%.3lf km/l\n", a / b);
+        double distancia, combustivel;
+        scanf("%lf %lf", &distancia, &combustivel);
+        printf("%.3lf km/l\n", distancia / combustivel);
         return 0;
     }            
