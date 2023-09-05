@@ -1,25 +1,38 @@
 #include <stdio.h>
 
 int main(){
-    int N;
+int valorEmReais, numeroDeNotas;
 
-    scanf("%d", &N);
+scanf("%d", &valorEmReais);
+printf("%d\n", valorEmReais);
 
-    printf("%d\n", N);
-    
-    printf("%d nota(s) de R$ 100,00\n", N/100);
-    N %= 100;
-    printf("%d nota(s) de R$ 50,00\n", N/50);
-    N %= 50;
-    printf("%d nota(s) de R$ 20,00\n", N/20);
-    N %= 20;
-    printf("%d nota(s) de R$ 10,00\n", N/10);
-    N %= 10;
-    printf("%d nota(s) de R$ 5,00\n", N/5);
-    N %= 5;
-    printf("%d nota(s) de R$ 2,00\n", N/2);
-    N %= 2;
-    printf("%d nota(s) de R$ 1,00\n", N);
+numeroDeNotas = valorEmReais / 100;
+valorEmReais = valorEmReais % 100;
+printf("%d notas(s) de R$100,00\n", numeroDeNotas);
+
+numeroDeNotas = valorEmReais / 50;
+valorEmReais = valorEmReais % 50;
+printf("%d notas(s) de R$50,00\n", numeroDeNotas);
+
+numeroDeNotas = valorEmReais / 20;
+valorEmReais = valorEmReais % 20;
+printf("%d notas(s) de R$20,00\n", numeroDeNotas);
+
+numeroDeNotas = valorEmReais / 10;
+valorEmReais = valorEmReais % 10;
+printf("%d notas(s) de R$10,00\n", numeroDeNotas);
+
+numeroDeNotas = valorEmReais / 5;
+valorEmReais = valorEmReais % 5;
+printf("%d notas(s) de R$5,00\n", numeroDeNotas);
+
+numeroDeNotas = valorEmReais / 2;
+valorEmReais = valorEmReais % 2;
+printf("%d notas(s) de R$2,00\n", numeroDeNotas);
+
+numeroDeNotas = valorEmReais / 1;
+valorEmReais = valorEmReais % 1;
+printf("%d notas(s) de R$1,00\n", numeroDeNotas);
 
     return 0;
 }
