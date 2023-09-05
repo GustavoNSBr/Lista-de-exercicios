@@ -1,6 +1,5 @@
 #include<stdio.h>
-int main()
-{
+int main(){
     double R, A;
     scanf("%lf", &R);
     A = 3.14159 * R * R;

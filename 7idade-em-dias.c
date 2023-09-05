@@ -1,7 +1,6 @@
 #include<stdio.h>
 
-int main()
-{
+int main(){
  int anos, semanas, dias;
    
  scanf("%d", &dias);
